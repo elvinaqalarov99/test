@@ -100,7 +100,7 @@
                 handleButton(0,errName,btnName);
                 if(res.success == 200){
                     setTimeout(function(){
-                        location.href = `/${errName}s/`;
+                        location.href = window.location.origin +`/${errName}s`;
                     },1000);
                     swal("Done!", "", "success");
                 }else{
