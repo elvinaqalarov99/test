@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\EmployeeController;
+use App\Models\Department;
+use App\Models\Employee;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('Admin.index');
+    $employees = Employee::with('departments')->get();
+    $departments = Department::with('employees')->get();
+    return view('Admin.index',compact('employees','departments'));
 });
 
 Route::resource('employees', EmployeeController::class);

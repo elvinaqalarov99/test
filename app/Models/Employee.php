@@ -16,8 +16,12 @@ class Employee extends Model
     public function departments(){
         return $this->belongsToMany(Department::class);
     }
+    
     public function getDepartmentIds(){
         return $this->departments->pluck('id')->all();
     }
 
+    // public function getGroupData(){
+    //     return $this->departments->groupBy('department_id');
+    // }
 }

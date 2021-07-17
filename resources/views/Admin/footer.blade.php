@@ -1,7 +1,7 @@
     </div>
 </div>
 <!-- Scripts -->
-<script src="{{ secure_asset('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 {{-- dataTables --}}
 <script src="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.js"></script>
 {{-- Select2 --}}
