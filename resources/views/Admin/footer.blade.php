@@ -56,7 +56,7 @@
 
     $('#employee-submit-form').submit(function(e){
         e.preventDefault();
-        handleRequest('employee-submit-form','/employees/','employee','Add');
+        handleRequest('employee-submit-form','/employees','employee','Add');
     });
 
     $('#employee-edit-form').submit(function(e){
@@ -67,7 +67,7 @@
 
     $('#department-submit-form').submit(function(e){
         e.preventDefault();
-        handleRequest('department-submit-form','/departments/','department','Add');
+        handleRequest('department-submit-form','/departments','department','Add');
     });
 
     $('#department-edit-form').submit(function(e){
