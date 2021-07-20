@@ -18,21 +18,13 @@
                                 @foreach ($employees as $employee)
                                     <tr>
                                         <td>{{ $employee->name }} {{ $employee->surname }}</td>
-                                        <td>
-                                            @if ($employee->departments->contains(1))
-                                                <i class="fas fa-check"></i>
+                                        @foreach ($departments as $department)
+                                            @if (in_array($department->id,$employee->getDepartmentIds()))
+                                                <td><i class="fas fa-check"></i></td>
+                                            @else
+                                                <td> </td>
                                             @endif
-                                        </td>
-                                        <td>
-                                            @if ($employee->departments->contains(2))
-                                                <i class="fas fa-check"></i>
-                                            @endif
-                                        </td>
-                                        <td>
-                                            @if ($employee->departments->contains(3))
-                                                <i class="fas fa-check"></i>
-                                            @endif
-                                        </td>
+                                        @endforeach
                                     </tr>
                                 @endforeach
                             </tbody>
