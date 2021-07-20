@@ -30,7 +30,7 @@
 
                 $.ajax({
                     type: 'POST',
-                    url: `dashboard/${model}/${id}`,
+                    url: `/${model}/${id}`,
                     data: {_token: CSRF_TOKEN,_method:'delete'},
                     dataType: 'JSON',
                     success: function (results) {
