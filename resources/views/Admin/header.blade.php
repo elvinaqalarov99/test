@@ -7,11 +7,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Styles -->
-    <link href="{{ secure_asset('assets/vendor/fontawesome/css/fontawesome.min.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('assets/vendor/fontawesome/css/solid.min.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('assets/vendor/fontawesome/css/brands.min.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('assets/css/master.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/fontawesome/css/fontawesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/fontawesome/css/solid.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/fontawesome/css/brands.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/master.css') }}" rel="stylesheet">
     {{-- Select2 --}}
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <!-- SweetAlert2 -->
