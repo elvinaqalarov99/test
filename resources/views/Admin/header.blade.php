@@ -20,7 +20,7 @@
 
 <body>
     <div class="wrapper">
-        <nav id="sidebar">
+        <nav id="sidebar" class="active">
             <div class="sidebar-header py-3 d-flex">
                 <h3 class="text-primary mb-0 p-0">Admin Panel</h3>
             </div>
